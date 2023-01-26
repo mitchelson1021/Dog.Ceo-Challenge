@@ -17,9 +17,12 @@ const Datos = () => {
 console.log(razas)
 
 const razas_arr = Object.entries(razas);
+
 razas_arr.forEach(([estado, raza])=>{
     Object.entries(raza).forEach(([perros, subrazas])=>{
+
         console.log(`${perros}  ${subrazas}`)
+
     })
 })
 
@@ -40,11 +43,12 @@ razas_arr.forEach(([estado, raza])=>{
                     </tr>
                 </thead>
                 <tbody>
-                    { razas_arr.map( ([estado, raza]) => (
-                        <tr key={estado}>
-                            <td>{estado.status}</td>
-                            <td>{raza.message}</td>
-                        </tr>
+                    { razas_arr.map(([subrazas, perros]) => ( Object.entries(perros).map(([valor, clave])=>(
+                    <tr key={valor}>
+                            <td>{valor}</td>
+                            <td>{clave}</td>
+                        </tr>))
+                        
                         
                     ))}
                 </tbody>
