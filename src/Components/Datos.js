@@ -17,15 +17,11 @@ const Datos = () => {
 console.log(razas)
 
 const razas_arr = Object.entries(razas);
-//razas_arr.map(([estado, raza]) => {
-//    return `${estado} ${raza}`
-//});
-//console.log(razas_arr)
-
-
-
-//Filtro de Busqueda
-
+razas_arr.forEach(([estado, raza])=>{
+    Object.entries(raza).forEach(([perros, subrazas])=>{
+        console.log(`${perros}  ${subrazas}`)
+    })
+})
 
 
     useEffect(() => {
@@ -45,7 +41,7 @@ const razas_arr = Object.entries(razas);
                 </thead>
                 <tbody>
                     { razas_arr.map( ([estado, raza]) => (
-                        <tr key={estado.status}>
+                        <tr key={estado}>
                             <td>{estado.status}</td>
                             <td>{raza.message}</td>
                         </tr>
