@@ -2,37 +2,83 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header {
+  margin-top: 55px;
+  background-image: url('./Imagenes/Fondo.jpg');
   color: white;
+  background-color: orange;
+  background-position: center;
+  background-size: cover;
+  border: 0px solid;
+  height: 120vh;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.text_header h1{
+  font-size: 6em;
+  margin-top: 1em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.header_img{
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: 40px;
+  background-image: url('./Imagenes/pet_section_2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.filter{
+  width: 90%;
+  height: ;
+  border: 1px solid blue;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  margin: auto;
+}
+
+.btn_buscar{
+  width: 80%;
+  font-size: var(--font1);
+  margin: 20px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.imagenes{
+  width: 100%;
+  height: 500px;
+  border: 3px solid gray;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.footer{
+  width: 100%;
+  height: 50px;
+  background-image: url(./Imagenes/particulas.jpg);
+  background-position: center;
+  background-size: cover;
+
+
+}
+  
+
+@media (min-width:355px) and (max-width:576px) {
+  .header_img{
+    background-color: red;
+    margin-top: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  .header_text{
+    font-size: 5em;
+
   }
 }
