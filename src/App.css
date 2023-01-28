@@ -67,8 +67,10 @@ header {
   background-image: url(./Imagenes/particulas.jpg);
   background-position: center;
   background-size: cover;
+}
 
-
+.tablas{
+  max-width: 200px;
 }
   
 

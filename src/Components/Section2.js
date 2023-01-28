@@ -1,6 +1,7 @@
 import React from 'react'
 import Datos from '../Components/Datos'
 import Filter from './Filter'
+import TablaRazas from '../Components/TablaRazas'
 
 
 const Section2 = () => {
@@ -13,11 +14,10 @@ const Section2 = () => {
                         Encuentra tu mascota favorita!
                     </h2>
                     <div className='filter '>
-                    <h2>
-                        Filtro
-                    </h2>
-                    <div> <Filter /> </div>
-                    <Datos />
+                    <h2>Filtro</h2>
+                    <div><Filter /> </div>
+                    <div><Datos /></div>
+                    
                     </div>
 
                 </div>
@@ -27,10 +27,9 @@ const Section2 = () => {
                     </h2>
                     
                     <div className='imagenes'>
-                    
+
                     </div>
                     
-
 
                 </div>
             </div>
